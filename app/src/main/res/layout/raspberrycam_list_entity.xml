@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent_list"
+    android:layout_width="match_parent"
+    android:layout_height="72dp"
+    android:layout_gravity="center"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:transitionName="parent_view"
+    tools:ignore="UnusedAttribute">
+
+    <ImageView
+        android:id="@+id/image_layanan"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/rpi_logo"
+        android:transitionName="image_layanan" />
+
+    <TextView
+        android:id="@+id/text_layanan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_toEndOf="@id/image_layanan"
+        android:layout_toRightOf="@+id/image_layanan"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:transitionName="text_layanan"
+        tools:text="string/item_title" />
+
+    <TextView
+        android:id="@+id/text_dokter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_layanan"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_toEndOf="@+id/image_layanan"
+        android:layout_toRightOf="@+id/image_layanan"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:textSize="14sp"
+        android:transitionName="text_dokter"
+        tools:text="string/item_desc" />
+
+    <ImageButton
+        android:id="@+id/vertButton"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@android:color/transparent"
+        android:padding="16dp"
+        android:visibility="gone"
+        app:srcCompat="@drawable/ic_more_vert_24" />
+
+    <ImageView
+        android:id="@+id/indicator"
+        android:layout_width="8dp"
+        android:layout_height="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="25dp"
+
+        android:layout_toRightOf="@id/text_layanan"
+        app:srcCompat="@drawable/ic_solid_24dp"
+        app:tint="@color/indicatorNegative" />
+
+    <ImageView
+        android:id="@+id/temperature_icon"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_alignTop="@id/text_layanan"
+        android:layout_alignBottom="@id/text_layanan"
+        android:layout_toLeftOf="@+id/temperature_text"
+        app:srcCompat="@drawable/ic_temperature_24dp"
+        android:tint="#FFA500"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/temperature_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/temperature_icon"
+        android:layout_alignBottom="@id/temperature_icon"
+        android:gravity="center_vertical"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:text="0°C"
+        android:textSize="10sp"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/memory_icon"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        app:srcCompat="@drawable/ic_memory_24dp"
+        android:tint="#1ac56a"
+        android:layout_toLeftOf="@+id/memory_text"
+        android:layout_below="@id/temperature_icon"
+        android:layout_alignBottom="@id/text_dokter"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/memory_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/temperature_icon"
+        android:layout_alignLeft="@+id/temperature_text"
+        android:layout_alignBottom="@id/memory_icon"
+        android:layout_alignParentRight="true"
+        android:gravity="center_vertical"
+        android:layout_marginRight="30dp"
+        android:text="0"
+        android:textSize="10sp"
+        android:visibility="gone"/>
+</RelativeLayout>

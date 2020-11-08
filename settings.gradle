@@ -1,0 +1,3 @@
+include ':jsch-0.1.55'
+include ':app'
+rootProject.name = "RaspberryCam"

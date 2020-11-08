@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_view"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:animateLayoutChanges="true"
+    android:fitsSystemWindows="false"
+    android:keepScreenOn="true"
+    android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+
+
+    <LinearLayout
+        android:id="@+id/screen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <org.freedesktop.gstreamer.surfaceview.GStreamerSurfaceView
+            android:id="@+id/surface_video"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/cameraName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="50dp"
+        android:paddingTop="25dp"
+        android:text="@string/camera_feed"
+        android:textColor="@color/White"
+        android:textSize="18sp"
+        android:paddingStart="50dp" />
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|left"
+        android:animateLayoutChanges="true">
+
+        <ImageButton
+            android:id="@+id/video_button"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginLeft="25dp"
+            android:layout_toRightOf="@id/screenshot_button"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic__videocam_24dp"
+            android:layout_marginStart="25dp"
+
+            android:clickable="false"
+
+            />
+
+        <ImageButton
+            android:id="@+id/screenshot_button"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginLeft="25dp"
+            android:layout_toRightOf="@id/back_button"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_photo_camera_24dp"
+            android:layout_marginStart="25dp"
+
+            android:clickable="false"
+            />
+
+
+        <ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginBottom="25dp"
+            android:background="@null"
+            android:tint="@color/White"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_arrow_back_24dp"
+            android:layout_marginStart="50dp" />
+
+    </RelativeLayout>
+
+</FrameLayout>

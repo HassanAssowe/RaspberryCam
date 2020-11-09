@@ -21,7 +21,7 @@ Aftering updating, enter **raspi-config** into the command line and press Enter,
 1) <pre>Select 3.Interface Options & Press Enter</pre> 
 2) <pre>Select P1 Camera & Press Enter</pre> 
 3) <pre>Select Yes & Press Enter then hit Ok. </pre>
-4) 3) <pre>Select Finish & Press Enter. </pre>
+4) <pre>Select Finish & Press Enter. </pre>
 
 After your device has sucessfully been configured. **Raspivid** is the command line tool responsible for for capturing video on a Camera Module.
 

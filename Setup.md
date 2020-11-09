@@ -17,8 +17,13 @@ Pi is **pi:raspberry**. Confirm these entries by pressing enter and you will suc
 If you have not already, it is suggested that you update your Raspberry Pi. To do this, type the following on the command line:
 **sudo apt update** followed by **sudo apt full-upgrade**
 
-After your device has sucessfully been updated. **Raspivid** is the command line tool responsible for for capturing video on a Camera 
-Module.
+Aftering updating, enter **raspi-config** into the command line and press Enter, then do the following:
+1) <pre>Select 3.Interface Options & Press Enter</pre> 
+2) <pre>Select P1 Camera & Press Enter</pre> 
+3) <pre>Select Yes & Press Enter then hit Ok. </pre>
+4) 3) <pre>Select Finish & Press Enter. </pre>
+
+After your device has sucessfully been configured. **Raspivid** is the command line tool responsible for for capturing video on a Camera Module.
 
 ## Raspivid
 [Info on Raspivid can be found here](https://www.raspberrypi.org/documentation/usage/camera/raspicam/raspivid.md)

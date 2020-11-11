@@ -1,10 +1,12 @@
 # RaspberryCam
 
 RaspberryCam is a third party Android application for managing Raspberry Pi Camera Modules. [Learn to setup a Raspberry Pi here](https://github.com/HassanAssowe/RaspberryCam/blob/master/Setup.md)
+[![License: CC BY-NC-ND 4.0](https://licensebuttons.net/l/by-nc-nd/4.0/80x15.png)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
 
  [<img src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png"    
       alt="Get it on Google Play"    
       height="80">](https://play.google.com/store/apps/details?id=com.hassanassowe.raspberrycam)    
+      
 
 ## Features
 
